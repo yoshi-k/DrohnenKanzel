@@ -4,11 +4,11 @@
 /*****************************************************************************/
 /* Created on Fri Aug 11 19:54:49 2017                                       */
 /* Type        : Python Script                                               */
-/* Description :                                                             */
-/* Module      :                                                             */
-/* Resources   : time, os, csv und stat.                                     */ 
-/* Input       : [Laufwerk] default "F",                                     */
-/* Output      : F:/10Admin/Data/CSV/letzter Zugriff_[end]_[laufw].csv,      */
+/* Description : Steuerung der Drohne.                                       */
+/* Module      : Crazyflie_test                                              */
+/* Resources   : tkinter.                                                    */ 
+/* Input       : Bildschirm                                                  */
+/* Output      : Bildschirm und und Crazyflie_test.ScanCfly().               */
 /*                                                                           */
 /* @author     : Hermann Kulbartz                                            */
 /*****************************************************************************/
@@ -128,6 +128,8 @@ label4.pack()
 while True:
     root.update_idletasks()
     root.update() 
-#    MotorThrust(count)
+
+    MotorThrust(thrust)
+
 #    time.sleep(0.5)
 #root.mainloop()
