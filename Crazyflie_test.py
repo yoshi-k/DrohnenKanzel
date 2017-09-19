@@ -81,9 +81,7 @@ class MotorRampExample():
         # Do not hijack the calling thread!
         print ("In connected zeile 74")
 #        Thread(target=self._ramp_motors).start()
-#
-#        Thread(target=self.up_motors).start()
-#        Thread(target=self.motors).start()
+
 
     def _connection_failed(self, link_uri, msg):
         """Callback when connection initial connection fails (i.e no Crazyflie
